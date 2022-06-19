@@ -1,0 +1,21 @@
+
+.card{
+    border: 2px solid black;
+    width: 600px;
+    margin:30px auto;
+    background-color: rgba(133, 11, 11, 0.824);
+}
+h2{
+    text-align: center;
+}
+li{
+    margin: 10px;
+    padding: 5px;
+    list-style: none;
+    background-color: rgb(151, 220, 220);
+}
+li.marks input{
+    width: 50px;
+    border: 1px solid black;
+    
+}

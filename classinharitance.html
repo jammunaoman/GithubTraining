@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demonstrating inharitance</title>
+</head>
+<body>
+    <script>
+        class CollegeDetails {
+            constructor(){
+            this.collegeName='ABC collage';
+            this.collegeLocation='hyderabad';
+            this.collegeRatings='4.5'
+        }
+        DisplayDetails(){
+            console.log('college Name ' + this.collegeName);
+            console.log('college location ' + this.collegeLocation);
+            console.log('college Rating ' + this.collegeRatings);
+        }
+        }
+        class Studentdata extends CollegeDetails{
+            constructor(){
+                super();
+                this.studentName='Raj';
+                this.studentAge=20;
+                this.studentGender='male'
+            }
+            Displaydata(){
+                console.log('the student Name ' + this.studentName );
+                console.log('the student age ' + this.studentAge);
+                console.log('the student gender ' + this.studentGender );
+                this.DisplayDetails();
+            }
+        }
+    var s1=new Studentdata();
+    s1.Displaydata();
+    </script>
+</body>
+</html>

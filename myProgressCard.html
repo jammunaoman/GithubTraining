@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> demonstrating readingdynamic data for progress card</title>
+    <link rel="stylesheet" href="studentApp.css">
+   
+</head>
+<body>
+    <ul>
+        <li class="title">
+            Student detail for progress card generation
+        </li>
+        <li>
+            Enter Student Name: <input type="text"  id="sname">
+            </li>
+            <li>
+             Gender:
+             Male <input type="radio" name="sgender" value="Male">
+             Female <input type="radio"  name="sgender" value="Female">
+        </li>
+
+        <li>
+            class:
+            <select  id="sClass">
+                <option value="Class1">Class1</option>
+                <option value="Class1">Class2</option>
+                <option value="Class1">Class3</option>
+                <option value="Class1">Class4</option>
+                <option value="Class1">Class5</option>
+            </select>
+        </li>
+
+        <li class="marks">
+            Marks:
+            <input type="text"  id="m1">
+            <input type="text"  id="m2">
+            <input type="text"  id="m3">
+            <input type="text"  id="m4">
+            <input type="text"  id="m5">
+        </li>
+        <li>
+            <input type="button" value="generate progress card" onclick="readstudentdata();">
+        </li>
+    </ul>
+    <ul>
+        <!--showing value on page statically-->
+
+        <li class="title">
+            studentprogress card details
+        </li>
+        <li>
+            student Name: <span id="d_name"> </span>
+        </li>
+        <li>
+            student gender: <span id="d_gender"> </span>
+        </li>
+        <li>
+            student class: <span id="d_class"> </span>
+        </li>
+        <li>
+            Total: <span id="d_total"> </span>
+            </li>
+        <li>Avg: <span id="d_avg"></span></li>
+       
+            <li>
+            Grade: <span id="d_grade"> </span>
+        </li>
+    </ul>
+  
+</body>
+<script src="Sapp.js"></script>
+</html>
